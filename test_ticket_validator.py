@@ -11,7 +11,7 @@ def test_validate_ticket_string(code):
         validate_ticket(12357367)
 
 def test_get_ticket_tier_valid_General(code):
-    assert get_ticket_tier("TK345678") is "General"
+    assert get_ticket_tier(code) is "General"
 
 def test_get_ticket_tier_valid_VIP(code):
     assert get_ticket_tier("TK567812") is "VIP"
